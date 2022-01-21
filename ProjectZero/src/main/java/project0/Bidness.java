@@ -2,8 +2,8 @@ package project0;
 
 import java.util.Scanner;
 
-import project0.implement.ItemRepoImpl;
-import project0.repos.ItemRepo;
+import project0.repos.AdminRepo;
+import project0.repos.UserRepo;
 
 
 public class Bidness {
@@ -11,25 +11,25 @@ public class Bidness {
 	
 	public static void main(String[] args) {
 		
-		ItemRepo itemRepo = new ItemRepoImpl();
+		//ItemRepo itemRepo = new ItemRepoImpl();
 		
-		//System.out.println(itemRepo.findAll());
+		//UserRepo userRepo = new UserRepoImpl();
 		
-		System.out.println(itemRepo.findById(2));
 		
+		
+
+		b.mainMenu();
 	}
-	
-	
 	public void mainMenu() {
 		Scanner scan = new Scanner(System.in);
 				System.out.println("Welcome to Lakeview General Goods!  Please choose an option below: \n 1: Create Account\n 2: Login\n 3: Exit");
 		int option = scan.nextInt();
 		switch(option){
 		case 1:
-			b.signUp();
+			Account.signUp();
 			break;
 		case 2:
-			b.login();
+			Account.login();
 			break;
 		case 3:
 			System.out.println("Goodbye!");
@@ -37,6 +37,9 @@ public class Bidness {
 			break;
 			}
 	}
+			
+	
+	
 	
 	
 	

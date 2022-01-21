@@ -106,3 +106,88 @@ previous add balance method
 	private int balance;
 	
 }
+
+another add to balance:
+	public void addToBalance() {
+		Scanner scan = new Scanner(System.in);
+		int balance = 0;
+		int added;
+		String input;
+		int newBalance;
+		
+			System.out.println("Please input the amount you'd like to add to your account:");
+				added = scan.nextInt();
+				while(added <= 0) {
+				try{
+					System.out.println("Invalid Input. Please enter positive numbers only.");
+				added = scan.nextInt();
+				} catch(InputMismatchException e) {
+				
+					System.out.println("Invalid Input. Please enter positive numbers only.");
+					added = scan.nextInt();
+			} 
+				}
+			if(added > 0) {
+				System.out.println("Your account balance is " + (balance + added) + ".");
+				}
+//			System.out.println("Would you like to add more? (Y/N)");
+//				input = scan.next();
+//								
+//				if(input.equalsIgnoreCase("Y")) {
+//					System.out.println("Please input the amount you'd like to add to your account:");
+//					added = scan.nextInt();
+//					while(added <= 0) {
+//						System.out.println("Invalid Input. Please try again.");
+//						added = scan.nextInt();
+//					}
+//						if(added > 0) {
+//						newBalance = balance + added;
+//						System.out.println("Your account balance is " + (balance + added) + ". Thank you!");
+//						}
+//					}
+//				if(input.equalsIgnoreCase("N")) {// make this go back to User menu method
+					System.out.println("Thank you!");
+				
+					}
+
+
+	
+}
+	
+//String input;
+//int balance = //user_balance from table;
+//int added;
+//int newBalance;
+//Scanner sc = new Scanner(System.in);
+//System.out.println("Your account balance is: " + balance);
+//System.out.println("Would you like to add more? (Y/N)");
+//input = sc.next();
+//				
+//if(input.equalsIgnoreCase("Y")) {
+//	System.out.println("Please input the amount you'd like to add to your account:");
+//	added = sc.nextInt();
+//	while(added <= 0) {
+//		System.out.println("Invalid Input. Please try again.");
+//		added = sc.nextInt();
+//	}
+//		if(added > 0) {
+//		newBalance = balance + added;
+//		System.out.println("Your account balance is " + (balance + added) + ". Thank you!");
+//		}
+//	}
+//if(input.equalsIgnoreCase("N")) {
+//	System.out.println("Thank you!");
+//	userMenu();
+//}
+
+check items in database
+
+		//System.out.println(itemRepo.findAll());
+		
+//		System.out.println(itemRepo.findById(2));
+		
+		//System.out.println(userRepo.findAll());
+		
+//		System.out.println(itemRepo.findByMaterial("clay"));
+//		System.out.println(itemRepo.findByType("tool"));
+//		System.out.println(itemRepo.findByName("iron"));

@@ -28,4 +28,16 @@ public class ItemRepoTest {
 		Assertions.assertNotNull(retrievedItems);
 		Assertions.assertEquals(30, retrievedItems.size());
 	}
+	
+	@Test
+	public void testFindItemByName() {
+		Item retrievedItem = itemRepo.findByName("Iron");
+		Assertions.assertNotNull(retrievedItem);
+		}
+	
+	@Test public void testFindItemByMaterial() {
+		List<Item> clayItems = itemRepo.findByMaterial("clay");
+		Assertions.assertNotNull(clayItems);
+		Assertions.assertEquals(3, clayItems.size());
+	}
 }

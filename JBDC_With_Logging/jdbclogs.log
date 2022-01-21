@@ -1,0 +1,2 @@
+10:44:14.715 [main] DEBUG c.revature.logging.SimpleLoggingDemo - debugging an issue at this point in my application
+10:44:14.717 [main] ERROR c.revature.logging.SimpleLoggingDemo - logging at error

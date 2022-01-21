@@ -7,16 +7,15 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
 import project0.util.*;
 import project0.models.User;
 import project0.repos.UserRepo;
 
-public class UserRepoImpl implements UserRepo{
+public class UserRepoImpl implements UserRepo {
 
 	public void save(User user) {
 		
-		final String SQL = "insert into users values(?,?,?)";
+		final String SQL = "insert into users values(?,?,?,?,?,?,?,?,?,?)";
 		Connection conn = null;
 		PreparedStatement stmt = null;
 		
@@ -27,9 +26,16 @@ public class UserRepoImpl implements UserRepo{
 			stmt.setString(1, user.getUserName()); 
 			stmt.setString(2, user.getPassword());
 			stmt.setString(3, user.getFullName());
+			stmt.setInt(4, user.getBirthMonth());
+			stmt.setInt(5, user.getBirthDay());
+			stmt.setString(6, user.getAddress());
+			stmt.setString(7, user.getCity());
+			stmt.setString(8, user.getState());
+			stmt.setString(9, user.getPhone());
+			stmt.setInt(10, user.getBalance());
 			stmt.execute();
 		} catch (SQLException e) {
-			e.printStackTrace();
+			
 		}	finally {
 			ConnectCloser.closeConnection(conn);
 			ConnectCloser.closeStatement(stmt);
@@ -58,10 +64,13 @@ public class UserRepoImpl implements UserRepo{
 						set.getString(6),
 						set.getString(7),
 						set.getString(8),
-						set.getString(9));
+						set.getString(9),
+						set.getInt(10)
+						);
 									}
 		} catch (SQLException e) {
 			System.out.println("No User found.  Please check the Username.");
+			
 		}	finally {
 			ConnectCloser.closeConnection(conn);
 			ConnectCloser.closeStatement(stmt);
@@ -91,7 +100,8 @@ public class UserRepoImpl implements UserRepo{
 						set.getString(6),
 						set.getString(7),
 						set.getString(8),
-						set.getString(9));
+						set.getString(9),
+						set.getInt(10));
 									}
 	} catch (SQLException e) {
 		System.out.println("No User found.  Please check the Name.");
@@ -124,7 +134,9 @@ public class UserRepoImpl implements UserRepo{
 						set.getString(6),
 						set.getString(7),
 						set.getString(8),
-						set.getString(9)));
+						set.getString(9),
+						set.getInt(10)
+						));
 			}
 		} catch (SQLException e) {
 			System.out.println("No records found.");
@@ -136,7 +148,7 @@ public class UserRepoImpl implements UserRepo{
 			return users;
 	}
 
-	public void updatePassword(User password) {
+	public void updatePassword(User username) {
 		User user= null;
 		final String SQL = "update users set user_pass = ? where user_name = ?";
 		Connection conn = null;
@@ -257,6 +269,36 @@ public class UserRepoImpl implements UserRepo{
 			ConnectCloser.closeConnection(conn);
 			ConnectCloser.closeStatement(stmt);
 		}
+	}
+
+
+	@Override
+	public void addToBalance(User balance) {
+		User user = null;
+		final String SQL = "update users set user_balance = ? where user_name = ?";
+		Connection conn = null;
+		PreparedStatement stmt = null;
+		try {
+			conn = ConnectUtil.getConnection();
+			stmt = conn.prepareStatement(SQL);
+			
+			stmt.setInt(1, user.getBalance());
+			stmt.setString(2, user.getUserName());
+			stmt.execute();
+		} catch (SQLException e) {
+			System.out.println("No User found.  Please check the Username.");
+		}finally {
+			ConnectCloser.closeConnection(conn);
+			ConnectCloser.closeStatement(stmt);
+		}
+		
+	}
+
+
+	@Override
+	public void addToBalance(int balance) {
+		// TODO Auto-generated method stub
+		
 	}
 
 

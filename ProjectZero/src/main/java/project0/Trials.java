@@ -1,11 +1,13 @@
 package project0;
 
-import java.util.InputMismatchException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Scanner;
 
-import org.slf4j.Logger;
-
-import project0.LakeviewLogger;
+import project0.models.User;
+import project0.util.ConnectUtil;
 
 public class Trials {
 	
@@ -14,72 +16,56 @@ static	Trials t = new Trials();
 
 	
 	public static void main(String[] args) {
-		t.addToBalance();
+		t.login();
 		}
 		
-	public void addToBalance() {
-		Scanner scan = new Scanner(System.in);
-		int balance = 0;
-		int added;
-		String input;
-		int newBalance;
+	public void login() {
 		
-			System.out.println("Please input the amount you'd like to add to your account:");
-				added = scan.nextInt();
-				while(added <= 0) {
-				try{
-					System.out.println("Invalid Input. Please enter positive numbers only.");
-				added = scan.nextInt();
-				} catch(InputMismatchException e) {
-					myLogger.error("Error: " + e);
-					System.out.println("Invalid Input. Please enter positive numbers only.");
-					added = scan.nextInt();
-			} 
-				}
-			if(added > 0) {
-				System.out.println("Your account balance is " + (balance + added) + ".");
-				}
-//			System.out.println("Would you like to add more? (Y/N)");
-//				input = scan.next();
-//								
-//				if(input.equalsIgnoreCase("Y")) {
-//					System.out.println("Please input the amount you'd like to add to your account:");
-//					added = scan.nextInt();
-//					while(added <= 0) {
-//						System.out.println("Invalid Input. Please try again.");
-//						added = scan.nextInt();
-//					}
-//						if(added > 0) {
-//						newBalance = balance + added;
-//						System.out.println("Your account balance is " + (balance + added) + ". Thank you!");
-//						}
-//					}
-//				if(input.equalsIgnoreCase("N")) {// make this go back to User menu method
-					System.out.println("Thank you!");
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Hello!\n 1: Login \n 2: Return");
+		int option = scan.nextInt();
+		switch(option) {
+			case 1:
+				User user = new User();
+				final String checkUser = "select user_name from users where user_name = ?";
+				Connection conn = null;
+				PreparedStatement stmt = null;
+				ResultSet set = null;
+				
+				try{ 
+				conn= ConnectUtil.getConnection();
+				stmt = conn.prepareStatement(checkUser);
+				set = stmt.executeQuery(checkUser);
+				stmt.setString(1, user.getUserName());
+					} catch (SQLException e) {}
+				System.out.println("Please enter your username:");
+				String username = scan.next();
+				final String checkPass = "select user_pass from users where user_name = ?";
+					if(username.matches(checkUser)) {
+						try{ 
+							conn= ConnectUtil.getConnection();
+							stmt = conn.prepareStatement(checkUser);
+							set = stmt.executeQuery(checkPass);
+							stmt.setString(1, user.getPassword());
+							} catch (SQLException e) {}
+					
+						System.out.println("Please enter your password:");
+						String password = scan.next();
+						
+						if(password.matches(checkPass)){
+							//userMenu();
+						}
 				
 					}
-
-//	public void addMore() {
-//		
-//		Scanner scan = new Scanner(System.in);
-//		int balance = 0;
-//		String input;
-//		System.out.println("Please input the amount you'd like to add to your account:");
-//		int addBalance = scan.nextInt();
-//			while( addBalance <= 0 ) {
-//				System.out.println("Invalid Input. Please try again.");
-//				addBalance = scan.nextInt();
-//			}
-//			if(addBalance > 0) {
-//			System.out.println("Your account balance is " + (balance + addBalance) + ". Thank you!");
-//			}
-//	scan.close();
-//	}
-		
-		
-}	
-	
+				else {
+					System.out.println("Username not recognized. Please try again."); //how do i return to the start of case 1?
+				}
+			case 2:
+				//mainMenu();
+		}
+		scan.close();
+	}
 
 
 
-
+}

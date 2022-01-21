@@ -15,10 +15,7 @@ public interface UserRepo {
 	User findByName(String fullName);
 	
 	
-	List<User> findAll();
-	
-	
-	void updatePassword(User password);
+	void updatePassword(User username);
 	
 	
 	void updateAddress(User address);
@@ -33,7 +30,13 @@ public interface UserRepo {
 	void updatePhone(User phone);
 	
 	
+	void addToBalance(int balance);
+	
+	
 	void delete(User user);
+
+
+	void addToBalance(User balance);
 	
 	
 }

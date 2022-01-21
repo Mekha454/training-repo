@@ -1,8 +1,8 @@
 package project0.models;
 
-import project0.Account;
+import java.util.Objects;
 
-public class User extends Account{
+public class User{
 	
 	private String userName;
 	private String password;
@@ -13,13 +13,14 @@ public class User extends Account{
 	private String city;
 	private String state;
 	private String phone;
+	private int balance;
 	
 	public User() {
 		super();
 	}
 
 	public User(String userName, String password, String fullName, int birthMonth, int birthDay, String address,
-			String city, String state, String phone) {
+			String city, String state, String phone, int balance) {
 		super();
 		this.userName = userName;
 		this.password = password;
@@ -30,6 +31,7 @@ public class User extends Account{
 		this.city = city;
 		this.state = state;
 		this.phone = phone;
+		this.balance = balance;
 	}
 
 	public String getUserName() {
@@ -45,7 +47,7 @@ public class User extends Account{
 	}
 
 	public void setPassword(String password) {
-		this.password = password;
+		 this.password = password;
 	}
 
 	public String getFullName() {
@@ -53,7 +55,7 @@ public class User extends Account{
 	}
 
 	public void setFullName(String fullName) {
-		this.fullName = fullName;
+		 this.fullName = fullName;
 	}
 
 	public int getBirthMonth() {
@@ -61,7 +63,7 @@ public class User extends Account{
 	}
 
 	public void setBirthMonth(int birthMonth) {
-		this.birthMonth = birthMonth;
+		 this.birthMonth = birthMonth;
 	}
 
 	public int getBirthDay() {
@@ -69,7 +71,7 @@ public class User extends Account{
 	}
 
 	public void setBirthDay(int birthDay) {
-		this.birthDay = birthDay;
+		 this.birthDay = birthDay;
 	}
 
 	public String getAddress() {
@@ -77,7 +79,7 @@ public class User extends Account{
 	}
 
 	public void setAddress(String address) {
-		this.address = address;
+		 this.address = address;
 	}
 
 	public String getCity() {
@@ -85,7 +87,7 @@ public class User extends Account{
 	}
 
 	public void setCity(String city) {
-		this.city = city;
+		 this.city = city;
 	}
 
 	public String getState() {
@@ -93,7 +95,7 @@ public class User extends Account{
 	}
 
 	public void setState(String state) {
-		this.state = state;
+		 this.state = state;
 	}
 
 	public String getPhone() {
@@ -101,23 +103,20 @@ public class User extends Account{
 	}
 
 	public void setPhone(String phone) {
-		this.phone = phone;
+		 this.phone = phone;
+	}
+
+	public int getBalance() {
+		return balance;
+	}
+
+	public void setBalance(int balance) {
+		this.balance = balance;
 	}
 
 	@Override
 	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((address == null) ? 0 : address.hashCode());
-		result = prime * result + birthDay;
-		result = prime * result + birthMonth;
-		result = prime * result + ((city == null) ? 0 : city.hashCode());
-		result = prime * result + ((fullName == null) ? 0 : fullName.hashCode());
-		result = prime * result + ((password == null) ? 0 : password.hashCode());
-		result = prime * result + ((phone == null) ? 0 : phone.hashCode());
-		result = prime * result + ((state == null) ? 0 : state.hashCode());
-		result = prime * result + ((userName == null) ? 0 : userName.hashCode());
-		return result;
+		return Objects.hash(address, balance, birthDay, birthMonth, city, fullName, password, phone, state, userName);
 	}
 
 	@Override
@@ -129,56 +128,20 @@ public class User extends Account{
 		if (getClass() != obj.getClass())
 			return false;
 		User other = (User) obj;
-		if (address == null) {
-			if (other.address != null)
-				return false;
-		} else if (!address.equals(other.address))
-			return false;
-		if (birthDay != other.birthDay)
-			return false;
-		if (birthMonth != other.birthMonth)
-			return false;
-		if (city == null) {
-			if (other.city != null)
-				return false;
-		} else if (!city.equals(other.city))
-			return false;
-		if (fullName == null) {
-			if (other.fullName != null)
-				return false;
-		} else if (!fullName.equals(other.fullName))
-			return false;
-		if (password == null) {
-			if (other.password != null)
-				return false;
-		} else if (!password.equals(other.password))
-			return false;
-		if (phone == null) {
-			if (other.phone != null)
-				return false;
-		} else if (!phone.equals(other.phone))
-			return false;
-		if (state == null) {
-			if (other.state != null)
-				return false;
-		} else if (!state.equals(other.state))
-			return false;
-		if (userName == null) {
-			if (other.userName != null)
-				return false;
-		} else if (!userName.equals(other.userName))
-			return false;
-		return true;
+		return Objects.equals(address, other.address) && balance == other.balance && birthDay == other.birthDay
+				&& birthMonth == other.birthMonth && Objects.equals(city, other.city)
+				&& Objects.equals(fullName, other.fullName) && Objects.equals(password, other.password)
+				&& Objects.equals(phone, other.phone) && Objects.equals(state, other.state)
+				&& Objects.equals(userName, other.userName);
 	}
 
 	@Override
 	public String toString() {
 		return "User [userName=" + userName + ", password=" + password + ", fullName=" + fullName + ", birthMonth="
 				+ birthMonth + ", birthDay=" + birthDay + ", address=" + address + ", city=" + city + ", state=" + state
-				+ ", phone=" + phone + "]";
+				+ ", phone=" + phone + ", balance=" + balance + "]";
 	}
-	
-	
+
 	
 }
 

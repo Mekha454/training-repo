@@ -38,6 +38,7 @@ public class ItemRepoImpl implements ItemRepo{
 			
 		} catch (SQLException e) {
 			System.out.println("No item found.  Please check the ID Number");
+			e.printStackTrace();
 		}finally {
 			ConnectCloser.closeConnection(conn);
 			ConnectCloser.closeStatement(stmt);
@@ -79,9 +80,9 @@ public class ItemRepoImpl implements ItemRepo{
 	}
 
 	@Override
-	public Item findByType(String type) {
-		Item item = null;
-		final String SQL = "select * from item where item_name = '" + type + "'";
+	public List<Item> findByType(String type) {
+		List<Item> items = new ArrayList<>();
+		final String SQL = "select * from item where item_type = '" + type + "'";
 		Connection conn = null;
 		Statement stmt = null;
 		ResultSet set = null;
@@ -91,12 +92,12 @@ public class ItemRepoImpl implements ItemRepo{
 			stmt = conn.createStatement();
 			set = stmt.executeQuery(SQL);
 			
-			if(set.next()) {
-				item = new Item(set.getInt(1),
+			while(set.next()) {
+				items.add(new Item (set.getInt(1),
 						set.getString(2),
 						set.getString(3),
 						set.getString(4),
-						set.getInt(5));
+						set.getInt(5)));
 			}
 			
 		} catch (SQLException e) {
@@ -106,12 +107,12 @@ public class ItemRepoImpl implements ItemRepo{
 			ConnectCloser.closeStatement(stmt);
 			ConnectCloser.closeResultSet(set);		
 	}
-	return item;
+	return items;
 	}
 
 	@Override
-	public Item findByMaterial(String material) {
-		Item item = null;
+	public List<Item> findByMaterial(String material) {
+		List<Item> items = new ArrayList<>();
 		final String SQL = "select * from item where item_name = '" + material + "'";
 		Connection conn = null;
 		Statement stmt = null;
@@ -122,12 +123,12 @@ public class ItemRepoImpl implements ItemRepo{
 			stmt = conn.createStatement();
 			set = stmt.executeQuery(SQL);
 			
-			if(set.next()) {
-				item = new Item(set.getInt(1),
+			while(set.next()) {
+				items.add(new Item (set.getInt(1),
 						set.getString(2),
 						set.getString(3),
 						set.getString(4),
-						set.getInt(5));
+						set.getInt(5)));
 			}
 			
 		} catch (SQLException e) {
@@ -137,7 +138,7 @@ public class ItemRepoImpl implements ItemRepo{
 			ConnectCloser.closeStatement(stmt);
 			ConnectCloser.closeResultSet(set);		
 	}
-	return item;		 
+	return items;		 
 	}
 
 	@Override

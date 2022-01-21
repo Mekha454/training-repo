@@ -1,0 +1,16 @@
+com\revature\repository\RecipeRepository.class
+com\revature\service\IngredientService.class
+com\revature\util\HibernateSessionFactory.class
+com\revature\model\Ingredient.class
+com\revature\repository\IngredientRepository.class
+com\revature\model\Author.class
+com\revature\model\Recipe.class
+com\revature\controller\IngredientController.class
+com\revature\HibernateBasics.class
+com\revature\Driver.class
+com\revature\controller\IngredientHandlers.class
+com\revature\repository\RecipeRepositoryImpl.class
+com\revature\service\RecipeService.class
+com\revature\repository\IngredientRepositoryImpl.class
+com\revature\HelloJavalin.class
+com\revature\util\JavalinConfig.class

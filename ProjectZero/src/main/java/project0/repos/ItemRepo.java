@@ -12,10 +12,10 @@ Item findById(int id);
 Item findByName(String name);
 
 
-Item findByType(String type);
+List<Item> findByType(String type);
 
 
-Item findByMaterial(String material);
+List<Item> findByMaterial(String material);
 
 
 List<Item> findAll();
