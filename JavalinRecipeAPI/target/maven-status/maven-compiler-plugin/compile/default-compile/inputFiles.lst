@@ -1,0 +1,16 @@
+C:\Users\felwo\Desktop\Revature\11-29-2021-Java-MSA\week 7\examples\Hibernate\JavalinRecipeAPI\src\main\java\com\revature\Driver.java
+C:\Users\felwo\Desktop\Revature\11-29-2021-Java-MSA\week 7\examples\Hibernate\JavalinRecipeAPI\src\main\java\com\revature\util\JavalinConfig.java
+C:\Users\felwo\Desktop\Revature\11-29-2021-Java-MSA\week 7\examples\Hibernate\JavalinRecipeAPI\src\main\java\com\revature\controller\IngredientHandlers.java
+C:\Users\felwo\Desktop\Revature\11-29-2021-Java-MSA\week 7\examples\Hibernate\JavalinRecipeAPI\src\main\java\com\revature\model\Ingredient.java
+C:\Users\felwo\Desktop\Revature\11-29-2021-Java-MSA\week 7\examples\Hibernate\JavalinRecipeAPI\src\main\java\com\revature\HibernateBasics.java
+C:\Users\felwo\Desktop\Revature\11-29-2021-Java-MSA\week 7\examples\Hibernate\JavalinRecipeAPI\src\main\java\com\revature\service\RecipeService.java
+C:\Users\felwo\Desktop\Revature\11-29-2021-Java-MSA\week 7\examples\Hibernate\JavalinRecipeAPI\src\main\java\com\revature\repository\RecipeRepository.java
+C:\Users\felwo\Desktop\Revature\11-29-2021-Java-MSA\week 7\examples\Hibernate\JavalinRecipeAPI\src\main\java\com\revature\model\Author.java
+C:\Users\felwo\Desktop\Revature\11-29-2021-Java-MSA\week 7\examples\Hibernate\JavalinRecipeAPI\src\main\java\com\revature\HelloJavalin.java
+C:\Users\felwo\Desktop\Revature\11-29-2021-Java-MSA\week 7\examples\Hibernate\JavalinRecipeAPI\src\main\java\com\revature\model\Recipe.java
+C:\Users\felwo\Desktop\Revature\11-29-2021-Java-MSA\week 7\examples\Hibernate\JavalinRecipeAPI\src\main\java\com\revature\service\IngredientService.java
+C:\Users\felwo\Desktop\Revature\11-29-2021-Java-MSA\week 7\examples\Hibernate\JavalinRecipeAPI\src\main\java\com\revature\repository\IngredientRepositoryImpl.java
+C:\Users\felwo\Desktop\Revature\11-29-2021-Java-MSA\week 7\examples\Hibernate\JavalinRecipeAPI\src\main\java\com\revature\repository\RecipeRepositoryImpl.java
+C:\Users\felwo\Desktop\Revature\11-29-2021-Java-MSA\week 7\examples\Hibernate\JavalinRecipeAPI\src\main\java\com\revature\util\HibernateSessionFactory.java
+C:\Users\felwo\Desktop\Revature\11-29-2021-Java-MSA\week 7\examples\Hibernate\JavalinRecipeAPI\src\main\java\com\revature\controller\IngredientController.java
+C:\Users\felwo\Desktop\Revature\11-29-2021-Java-MSA\week 7\examples\Hibernate\JavalinRecipeAPI\src\main\java\com\revature\repository\IngredientRepository.java
