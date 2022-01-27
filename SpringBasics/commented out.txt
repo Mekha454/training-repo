@@ -1,0 +1,24 @@
+<!-- 'bean wiring' to create relationships -->        
+    
+    <bean name="recipeController" class="com.revature.controller.RecipeController" scope="singleton">
+    
+    <!-- constructor injection -->
+    
+    <constructor-arg index="0" ref="recipeService"></constructor-arg></bean>
+    
+    
+    
+    <bean name="recipeService" class="com.revature.service.RecipeService" autowire="byName">
+    
+    <!-- setter injection -->
+    
+    <!--  <property name="recipeRepository" ref="recipeRepository"></property>-->
+    </bean>
+    
+    
+    
+    <bean name="recipeRepository" class="com.revature.repository.RecipeRepository"></bean>
+    
+    
+    <!-- tells framework where to look for annotations/ beans 
+        <context:component-scan base-package="com.revature"></context:component-scan> -->

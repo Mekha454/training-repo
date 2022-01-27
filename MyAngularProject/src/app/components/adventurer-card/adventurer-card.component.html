@@ -1,0 +1,20 @@
+
+<!-- one method of "data binding", specifically  method of 'one-way data binding' as the data is bound only in one direction-->
+
+<!-- "ngIf" is a structural directive; structural directives affect the DOM by adding or removing elements from the DOM
+    Structural directives are preceded with an asterisk (*)-->
+<div class="adventurer_div" *ngIf='isHidden'>
+    <h3>{{adventurer.name}}</h3>
+    <p>{{adventurer.race | custom}}</p>
+    <p>{{adventurer.role}}</p>
+    <img class="adventurer_img" src="{{adventurer.img_url}}"/>
+    <ol>
+        <li>{{adventurer.exploits[0]}}</li>
+        <li>{{adventurer.exploits[1]}}</li>
+    </ol>
+    <label for="name">Change Name: </label>
+    <input [(ngModel)]="adventurer.name" type="text" name="name">
+</div>
+<div>
+    <button (click)= "toggleVisibility()">Hide Adventurer!</button>
+</div>

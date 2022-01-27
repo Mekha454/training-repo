@@ -1,0 +1,13 @@
+img.adventurer_img{
+    width: 15em;
+}
+
+.adventurer_div{
+    text-align: center;
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1em;
+    margin-bottom: 2em;
+    background-color: plum;
+}
