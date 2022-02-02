@@ -54,7 +54,7 @@ insert into recipe_ingredient values(1, 2);
 insert into recipe_ingredient values(5, 1);
 insert into recipe_ingredient values(1, 1); --this will not work as there is primary key constraint--
 
-select * from hibernate_recipe;
+select * from recipes;
 
 select recipe_name, recipe_cooktimeinminutes from recipes;
 

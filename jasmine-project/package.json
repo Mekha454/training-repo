@@ -1,0 +1,14 @@
+{
+  "name": "jasmine-project",
+  "version": "1.0.0",
+  "description": "testing jasmine",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "mekha454",
+  "license": "ISC"
+}
