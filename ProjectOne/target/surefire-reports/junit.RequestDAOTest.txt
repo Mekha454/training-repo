@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: junit.RequestDAOTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
+junit.RequestDAOTest.testFindById()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at junit.RequestDAOTest.testFindById(RequestDAOTest.java:35)
+
+junit.RequestDAOTest.testViewAllRequests()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at junit.RequestDAOTest.testViewAllRequests(RequestDAOTest.java:27)
+
