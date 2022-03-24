@@ -1,0 +1,28 @@
+<!--This {{}} syntax is called "string interpolation". It allows us to bind data from our component state to the view itself.
+
+This is one method of "data binding". This is specifically a method of "one-way data binding" as the data is bound only in direction.
+
+Note also the use of "property binding", which is also a type of one-way data binding. The syntax for property binding is [attributeName] = "someStateOnComponent". Note that property binding should be used with element attributes.
+
+While we've used property binding with the hidden attribute e.g."[hidden]="isHidden"", we can also simply use "ngIf". "ngIf" is a "structural directive"; structural directives they affect the DOM (e.g. they add or remove elements from the DOM). Structural directives are preceded with an asterisk(*). -->
+<div class="recipe_div" *ngIf="isHidden">
+    <!--Pipes allow you to perform temporary transformations of data, for the purpose of displaying data differently.-->
+    <h3>{{recipe.name | uppercase}}</h3>
+    <!--Applying a custom pipe.-->
+    <p>{{recipe.cookTimeInMinutes}}</p>
+    <img class="recipe_img" src="{{recipe.img_url}}"/>
+    <ol>
+        <li></li>
+        <li></li>
+    </ol>
+<!--Let's add an input box which allows us to modify the description of the recipe. 
+
+This input box makes use of "ngModel". "ngModel" is a type of "two-way data binding". Note the syntax below as it combines the syntax for property and event binding. In this case, we've bound the value of the input box to the value of the recipe object's "description" property. Also note that we had to import the FormsModule in our app.module.ts file to bring in support for ngModel.-->
+    <label for="description">Change Description: </label>
+    <input [(ngModel)]="recipe.description" type="text" name="description"/>
+</div>
+
+<div>
+    <!--This is the syntax for "event binding", another type of one-way data binding. When we bind an event, a method is invoked after an event occurs on the frontend.-->
+    <button (click)="toggleVisibility()">Hide Recipe!</button>
+</div>
