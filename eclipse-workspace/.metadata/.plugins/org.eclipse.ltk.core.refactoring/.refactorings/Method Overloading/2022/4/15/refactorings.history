@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ExampleOne.java&apos; to &apos;pre-training/src/com.revature.pretraining.methodoverload&apos;&#x0D;&#x0A;- Original project: &apos;Method Overloading&apos;&#x0D;&#x0A;- Destination element: &apos;pre-training/src/com.revature.pretraining.methodoverload&apos;&#x0D;&#x0A;- Original element: &apos;ExampleOne.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=pre-training/src&lt;com.revature.pretraining.methodoverload" element1="/src&lt;{ExampleOne.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1649016667756" units="1" version="1.0"/>
+</session>

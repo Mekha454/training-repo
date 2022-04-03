@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 3 elements to &apos;pre-training/src/com.revature.pretraining.labs&apos;&#x0D;&#x0A;- Original project: &apos;Lab-Scanner&apos;&#x0D;&#x0A;- Destination element: &apos;pre-training/src/com.revature.pretraining.labs&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     ExeriseTwoCopy.java&#x0D;&#x0A;     ExerciseOneCopy.java&#x0D;&#x0A;     ExampleOne.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="=pre-training/src&lt;com.revature.pretraining.labs" element1="/src&lt;{ExeriseTwoCopy.java" element2="/src&lt;{ExerciseOneCopy.java" element3="/src&lt;{ExampleOne.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1649016784157" units="3" version="1.0"/>
+</session>

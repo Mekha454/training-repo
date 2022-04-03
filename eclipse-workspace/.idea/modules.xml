@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.metadata/.plugins/org.eclipse.egit.core/.org.eclipse.egit.core.cmp/.org.eclipse.egit.core.cmp.iml" filepath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.egit.core/.org.eclipse.egit.core.cmp/.org.eclipse.egit.core.cmp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Classes vs Objects/Classes vs Objects.iml" filepath="$PROJECT_DIR$/Classes vs Objects/Classes vs Objects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClassesVideo/ClassesVideo.iml" filepath="$PROJECT_DIR$/ClassesVideo/ClassesVideo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Composite Relationships/Composite Relationships.iml" filepath="$PROJECT_DIR$/Composite Relationships/Composite Relationships.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Constructors/Constructors.iml" filepath="$PROJECT_DIR$/Constructors/Constructors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Do-While Loops/Do-While Loops.iml" filepath="$PROJECT_DIR$/Do-While Loops/Do-While Loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Else-If Statements/Else-If Statements.iml" filepath="$PROJECT_DIR$/Else-If Statements/Else-If Statements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Helloworld/Helloworld.iml" filepath="$PROJECT_DIR$/Helloworld/Helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InheritanceVideo/InheritanceVideo.iml" filepath="$PROJECT_DIR$/InheritanceVideo/InheritanceVideo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Instance Variables/Instance Variables.iml" filepath="$PROJECT_DIR$/Instance Variables/Instance Variables.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keyword-Abstract/Keyword-Abstract.iml" filepath="$PROJECT_DIR$/Keyword-Abstract/Keyword-Abstract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keyword-Final/Keyword-Final.iml" filepath="$PROJECT_DIR$/Keyword-Final/Keyword-Final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KeywordThis/KeywordThis.iml" filepath="$PROJECT_DIR$/KeywordThis/KeywordThis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab- Do-While Loops/Lab- Do-While Loops.iml" filepath="$PROJECT_DIR$/Lab- Do-While Loops/Lab- Do-While Loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab-Abstract/Lab-Abstract.iml" filepath="$PROJECT_DIR$/Lab-Abstract/Lab-Abstract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab-AccessModifiers/Lab-AccessModifiers.iml" filepath="$PROJECT_DIR$/Lab-AccessModifiers/Lab-AccessModifiers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab-CompositeRelationships/Lab-CompositeRelationships.iml" filepath="$PROJECT_DIR$/Lab-CompositeRelationships/Lab-CompositeRelationships.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab-Constructors/Lab-Constructors.iml" filepath="$PROJECT_DIR$/Lab-Constructors/Lab-Constructors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab-Exception/Lab-Exception.iml" filepath="$PROJECT_DIR$/Lab-Exception/Lab-Exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab-ForLoops/Lab-ForLoops.iml" filepath="$PROJECT_DIR$/Lab-ForLoops/Lab-ForLoops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab-Method/Lab-Method.iml" filepath="$PROJECT_DIR$/Lab-Method/Lab-Method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab-MethodParameters/Lab-MethodParameters.iml" filepath="$PROJECT_DIR$/Lab-MethodParameters/Lab-MethodParameters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab-MethodReturnType/Lab-MethodReturnType.iml" filepath="$PROJECT_DIR$/Lab-MethodReturnType/Lab-MethodReturnType.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab-Overloading/Lab-Overloading.iml" filepath="$PROJECT_DIR$/Lab-Overloading/Lab-Overloading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab-Recursion/Lab-Recursion.iml" filepath="$PROJECT_DIR$/Lab-Recursion/Lab-Recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab-Scanner/Lab-Scanner.iml" filepath="$PROJECT_DIR$/Lab-Scanner/Lab-Scanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab-SearchAlgorithms/Lab-SearchAlgorithms.iml" filepath="$PROJECT_DIR$/Lab-SearchAlgorithms/Lab-SearchAlgorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab-StaticInstance/Lab-StaticInstance.iml" filepath="$PROJECT_DIR$/Lab-StaticInstance/Lab-StaticInstance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab-StringMethods/Lab-StringMethods.iml" filepath="$PROJECT_DIR$/Lab-StringMethods/Lab-StringMethods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab-Switch/Lab-Switch.iml" filepath="$PROJECT_DIR$/Lab-Switch/Lab-Switch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab12-Classes/Lab12-Classes.iml" filepath="$PROJECT_DIR$/Lab12-Classes/Lab12-Classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MessAbout/MessAbout.iml" filepath="$PROJECT_DIR$/MessAbout/MessAbout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Method Overloading/Method Overloading.iml" filepath="$PROJECT_DIR$/Method Overloading/Method Overloading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Method Parameters/Method Parameters.iml" filepath="$PROJECT_DIR$/Method Parameters/Method Parameters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Methods/Methods.iml" filepath="$PROJECT_DIR$/Methods/Methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MethodsWithReturnType/MethodsWithReturnType.iml" filepath="$PROJECT_DIR$/MethodsWithReturnType/MethodsWithReturnType.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NestedStatements/NestedStatements.iml" filepath="$PROJECT_DIR$/NestedStatements/NestedStatements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Packages/Packages.iml" filepath="$PROJECT_DIR$/Packages/Packages.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Scanner/Scanner.iml" filepath="$PROJECT_DIR$/Scanner/Scanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Static/Static.iml" filepath="$PROJECT_DIR$/Static/Static.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwitchStatements/SwitchStatements.iml" filepath="$PROJECT_DIR$/SwitchStatements/SwitchStatements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/While Loops/While Loops.iml" filepath="$PROJECT_DIR$/While Loops/While Loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/castingdatatypes/castingdatatypes.iml" filepath="$PROJECT_DIR$/castingdatatypes/castingdatatypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/else-statements/else-statements.iml" filepath="$PROJECT_DIR$/else-statements/else-statements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/if-statements/if-statements.iml" filepath="$PROJECT_DIR$/if-statements/if-statements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab-StringConcatenation/lab-StringConcatenation.iml" filepath="$PROJECT_DIR$/lab-StringConcatenation/lab-StringConcatenation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab-arrays/lab-arrays.iml" filepath="$PROJECT_DIR$/lab-arrays/lab-arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab-conditionalBlocks/lab-conditionalBlocks.iml" filepath="$PROJECT_DIR$/lab-conditionalBlocks/lab-conditionalBlocks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab-datatypes/lab-datatypes.iml" filepath="$PROJECT_DIR$/lab-datatypes/lab-datatypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab-mathematicaloperators/lab-mathematicaloperators.iml" filepath="$PROJECT_DIR$/lab-mathematicaloperators/lab-mathematicaloperators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swapelements/swapelements.iml" filepath="$PROJECT_DIR$/swapelements/swapelements.iml" />
+    </modules>
+  </component>
+</project>
